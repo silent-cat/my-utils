@@ -1,0 +1,15 @@
+{
+    "debounce": {
+        "prefix": "debounce",
+        "body": [
+            "const debounce = (fn, time) => {",
+            "  let timer",
+            "  return () => {",
+            "    clearTimeout(timer)",
+            "    timer = setTimeout(() => fn(), time)",
+            "  }",
+            "}"
+        ],
+        "description": "防抖"
+    },
+}
