@@ -1,15 +1,56 @@
 {
-    "debounce": {
-        "prefix": "debounce",
-        "body": [
-            "const debounce = (fn, time) => {",
-            "  let timer",
-            "  return () => {",
-            "    clearTimeout(timer)",
-            "    timer = setTimeout(() => fn(), time)",
-            "  }",
-            "}"
-        ],
-        "description": "防抖"
-    },
+  "debounce": {
+    "prefix": "debounce",
+    "body": [
+      "const debounce = (fn, time) => {",
+      "  let timer",
+      "  return () => {",
+      "    clearTimeout(timer)",
+      "    timer = setTimeout(() => fn(), time)",
+      "  }",
+      "}"
+    ],
+    "description": "防抖"
+  },
+  "vue2-default-template": {
+    "prefix": "vue2",
+    "body": [
+      "<template>",
+      "    <div>",
+      "",
+      "    </div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "",
+      "};",
+      "</script>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "",
+      "</style>"
+    ],
+    "description": "vue2默认模板"
+  },
+  // css常用样式
+  "Multiple line ellipsis": {
+    "prefix": ".ellipsis",
+    "body": [
+      ".ellipsis {",
+      "    overflow: hidden;",
+      "    text-overflow: ellipsis;",
+      "    display: -webkit-box;",
+      "    -webkit-line-clamp: 3;",
+      "    -webkit-box-orient: vertical;",
+      "}"
+    ],
+    "description": "多行省略"
+  },
+  "clear float": {
+    "prefix": ".clearfix",
+    "body": [".clearfix:after {", "    content: \"\";", "    display: block;", "    clear: both;", "}"],
+    "description": "清除浮动"
+  },
+
 }
